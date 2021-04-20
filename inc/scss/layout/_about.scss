@@ -1,0 +1,27 @@
+.about {
+  background: $terracotta;
+  padding: 3rem 0;
+
+  &-title {
+    color: $yellow;
+    font-size: 3.5rem;
+  }
+
+  &-content {
+    color: $white;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .btn-las-iguanas {
+    background: $yellow;
+    color: $black;
+    padding: 0.375rem 2rem;
+    font-family: $merlodnormeregularedited;
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+}

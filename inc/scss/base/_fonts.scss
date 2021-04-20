@@ -1,9 +1,14 @@
 @font-face {
   font-family: "Avallon";
-  src: url("../fonts/Avallon.woff2") format("woff2"), url("../fonts/Avallon.woff") format("woff"); /* Pretty Modern Browsers */
+  src: url("../fonts/Avallon.woff2") format("woff2"), url("../fonts/Avallon.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Merlod Norme Regular Edited";
+  src: url("../fonts/MerlodNorme-Regular-Edited.woff2") format("woff2"), url("../fonts/MerlodNorme-Regular-Edited.woff") format("woff");
 }
 
 @font-face {
   font-family: "Merlod Norme Semi Bold";
-  src: url("../fonts/MerlodNorme-SemiBold.woff2") format("woff2"), url("../fonts/MerlodNorme-SemiBold.woff") format("woff"); /* Pretty Modern Browsers */
+  src: url("../fonts/MerlodNorme-SemiBold.woff2") format("woff2"), url("../fonts/MerlodNorme-SemiBold.woff") format("woff");
 }
