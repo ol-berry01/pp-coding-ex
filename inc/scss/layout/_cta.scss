@@ -1,0 +1,23 @@
+.cta {
+  background: $yellow;
+  padding: 1rem 0;
+
+  @media (min-width: 992px) {
+    padding: 5rem 0;
+  }
+
+  &-title {
+    color: $pink;
+  }
+
+  &-sub-title {
+    color: $black;
+    font-family: $merlodnormesemibold;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+
+  .btn-las-iguanas {
+    padding: 0.375 3rem;
+  }
+}
