@@ -1,0 +1,51 @@
+.navbar {
+  background: url("../img/blue-nav-bar-desktop-e03937be07059eff06bbe66dd814b55a.jpg");
+
+  &-nav {
+    text-align: center;
+  }
+  &-brand {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      height: 25px;
+
+      @media (min-width: 992px) {
+        height: 40px;
+      }
+    }
+    &-people {
+      display: none;
+
+      @media (min-width: 992px) {
+        color: $white;
+        margin: 0.7rem 0 0 1rem;
+        display: inline-block;
+      }
+    }
+  }
+
+  .btn-las-iguanas {
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: auto;
+    }
+  }
+}
+.nav {
+  &-item {
+    transition: 300ms ease;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+.nav-link {
+  color: $white !important;
+  font-family: $merlodnormesemibold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
