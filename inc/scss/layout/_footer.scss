@@ -1,0 +1,18 @@
+.footer {
+  background: $black;
+  color: $white;
+  padding: 3rem 0;
+  font-family: $merlodnormeregularedited;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+    transition: 300ms;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
