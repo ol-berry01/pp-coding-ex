@@ -1,0 +1,41 @@
+.hero {
+  background: #fafaf8;
+  height: calc(40vh - 56px);
+
+  @media (min-width: 768px) {
+    height: calc(60vh - 56px);
+  }
+
+  @media (min-width: 992px) {
+    height: calc(80vh - 79px);
+  }
+
+  .container,
+  .row,
+  &-background {
+    height: 100%;
+  }
+
+  &-background {
+    background: url("../img/las-iguanas-video.jpg");
+    background-size: cover;
+    background-position-x: center;
+    justify-content: center;
+
+    @media (min-width: 992px) {
+      justify-content: start;
+    }
+
+    .btn-las-iguanas {
+      background: $blue;
+      padding: 0.5rem 3rem;
+      font-family: $merlodnormeregularedited;
+      font-size: 1.6rem;
+
+      &:hover {
+        background: $pink;
+        color: $white;
+      }
+    }
+  }
+}
