@@ -1,0 +1,120 @@
+.img-section,
+.img-section-alt {
+  display: block;
+}
+.img-block {
+  height: auto;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    height: 60vh;
+  }
+
+  @media (min-width: 1250px) {
+    height: 50vh;
+  }
+}
+.img-section,
+.img-section-alt {
+  .img-block .img-wrap {
+    display: inline-block;
+    width: calc(50% + 45px);
+    height: 100%;
+
+    .container {
+      height: 100%;
+      img {
+        height: calc(100% - 40px);
+        margin: 20px auto;
+
+        @media (min-width: 992px) {
+          height: calc(100% - 100px);
+          margin: 50px auto;
+        }
+      }
+    }
+  }
+}
+.img-section .img-block:nth-child(odd),
+.img-section-alt .img-block:nth-child(even) {
+  .img-wrap {
+    background-size: cover;
+    background-position: center;
+    float: right;
+    @media (min-width: 992px) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 70px 100%);
+    }
+  }
+}
+.img-section .img-block:nth-child(even),
+.img-section-alt .img-block:nth-child(odd) {
+  .img-wrap {
+    background-size: cover;
+    background-position: center;
+    position: left;
+
+    @media (min-width: 992px) {
+      clip-path: polygon(0 0, 100% 0, calc(100% - 70px) 100%, 0 100%);
+    }
+  }
+}
+.img-section,
+.img-section-alt {
+  .img-block .txt-wrap {
+    width: calc(50% - 45px);
+    min-height: 100%;
+    padding: 5rem;
+  }
+}
+.img-section .img-block:nth-child(odd),
+.img-section-alt .img-block:nth-child(even) {
+  .txt-wrap {
+    float: left;
+  }
+}
+.img-section .img-block:nth-child(even),
+.img-section-alt .img-block:nth-child(odd) {
+  .txt-wrap {
+    float: right;
+  }
+}
+@media (max-width: 992px) {
+  // .img-block {
+  //   height: auto;
+  //   overflow: hidden;
+  // }
+  .img-section,
+  .img-section-alt {
+    .img-block .img-wrap {
+      width: 100%;
+      height: 325px;
+      float: none;
+    }
+  }
+  .img-section,
+  .img-section-alt {
+    .img-block .txt-wrap {
+      width: 100%;
+      padding: 10%;
+      float: none;
+    }
+  }
+}
+
+.img {
+  &-cocktail {
+    background: url("../img/las-iguanas-cocktail.jpg");
+  }
+  &-chef {
+    background: url("../img/las-iguanas-chef.jpg");
+  }
+  &-waitress-01 {
+    background: url("../img/las-iguanas-waitress-01.jpg");
+  }
+  &-waitress-02 {
+    background: url("../img/las-iguanas-waitress-02.jpg");
+  }
+  &-perks {
+    background: url("../img/las-iguanas-perks.jpg");
+  }
+}

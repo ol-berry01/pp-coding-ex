@@ -20,9 +20,17 @@ h6 {
 h2 {
   font-size: 5rem;
 }
-
+h3 {
+  font-size: 4rem;
+}
 h4 {
   font-size: 2.2rem;
+}
+
+p {
+  font-family: $merlodnormesemibold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 main {
@@ -30,5 +38,58 @@ main {
 
   @media (min-width: 992px) {
     margin-top: 79px;
+  }
+}
+
+.bg {
+  &-pink {
+    background-color: $pink;
+  }
+  &-blue {
+    background-color: $blue;
+  }
+  &-turquoise {
+    background-color: $turquoise;
+  }
+  &-green {
+    background-color: $green;
+  }
+  &-yellow {
+    background-color: $yellow;
+  }
+  &-terracotta {
+    background-color: $terracotta;
+  }
+  &-white {
+    background-color: $white;
+  }
+  &-black {
+    background-color: $black;
+  }
+}
+.clr {
+  &-pink {
+    color: $pink;
+  }
+  &-blue {
+    color: $blue;
+  }
+  &-turquoise {
+    color: $turquoise;
+  }
+  &-green {
+    color: $green;
+  }
+  &-yellow {
+    color: $yellow;
+  }
+  &-terracotta {
+    color: $terracotta;
+  }
+  &-white {
+    color: $white;
+  }
+  &-black {
+    color: $black;
   }
 }
