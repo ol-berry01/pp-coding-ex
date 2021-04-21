@@ -13,6 +13,13 @@
   @media (min-width: 1250px) {
     height: 50vh;
   }
+
+  .bg-terracotta {
+    .btn-las-iguanas {
+      background-color: $yellow !important;
+      color: $black !important;
+    }
+  }
 }
 .img-section,
 .img-section-alt {
